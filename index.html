@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <script src="js/scripts.js" defer></script>
+</head>
+<body> 
+    <main id="container">
+        <section id="img">
+            <img src="img/undraw_personal_training_0dqn.svg">
+        </section>
+        <section id="calc-container"> 
+            <h1 id="title">
+                Calculadora IMC
+            </h1>
+            <form id="imc-form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="height">Altura (m)</label>
+                        <i class="fa-solid fa-ruler"></i>
+                        <input 
+                        type="text"
+                        name="height"
+                        id="height"
+                        placeholder="Exemplo 1,70"
+                        />
+                    </div>
+                    <div class="form-control">
+                        <label for="weight">Peso (Kg)</label>
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input
+                        type="text"
+                        name="weight"
+                        id="weight"
+                        placeholder="Exemplo 55,5"
+                        >
+                    </div>
+                </div>
+                <div class="action-control">
+                    <button id="calc-btn">Calcular</button>
+                    <button id="clear-btn">Limpar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <section id="result-container" class="hide">
+        <p id="imc-number">Seu IMC: <span class="good">25 </span></p>
+        <p id="imc-info">Situação atual: <span class="good">Magreza</span></p>
+        <h3>Confira as classificações:</h3>
+        <div id="imc-table">
+            <div class="table-header">
+                <h4>IMC</h4>
+                <h4>Classificação</h4>
+                <h4>Obesidade</h4>
+            </div>
+            <div class="table-data">
+                <p>Menor que 18,5</p>
+                <p>Magreza</p>
+                <p>0</p>
+            </div>
+        </div>
+        <button id="back-btn">Reiniciar</button>
+    </section>
+
+</body>
+</html>
